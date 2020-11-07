@@ -14,6 +14,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
     restart: always
     volumes:
-      - ./tmp/pgdata:/var/lib/postgresql/data
+      - ./tmp/pgdata:/var/lib/postgresql/data/pgdata
